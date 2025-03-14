@@ -1,0 +1,97 @@
+.sceneContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+.environment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0));
+  background-repeat: repeat;
+  animation: twinkle 4s infinite;
+}
+
+.horizon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(50, 50, 50, 0.5) 40%,
+    rgb(30, 30, 30) 100%
+  );
+}
+
+.lunarDust {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(100, 100, 100, 0.1),
+      rgba(100, 100, 100, 0.1) 10px,
+      rgba(150, 150, 150, 0.1) 10px,
+      rgba(150, 150, 150, 0.1) 20px
+    );
+}
+
+.dataElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.dataPatterns {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  .pattern {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+}
+
+.introSequence {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}

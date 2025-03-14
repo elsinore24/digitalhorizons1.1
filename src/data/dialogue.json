@@ -1,0 +1,22 @@
+{
+  "lunar_arrival_intro": {
+    "speaker": "ALARA",
+    "text": "Professor Thorne? Can you hear me? Your neural connection is stabilizing...",
+    "audio": "lunar_arrival_intro.mp3"
+  },
+  "echo_discovery_apollo": {
+    "speaker": "ALARA",
+    "text": "Fascinating. This temporal echo shows humans first arriving on the lunar surface. But... there's something else here. Do you see it?",
+    "audio": "echo_discovery_apollo.mp3"
+  },
+  "lunar_arrival_explanation": {
+    "speaker": "ALARA",
+    "text": "The data patterns here... they're unlike anything in our records.",
+    "audio": "lunar_arrival_explanation.mp3"
+  },
+  "lunar_arrival_mission": {
+    "speaker": "JULIAN",
+    "text": "Where... where am I? This doesn't feel real.",
+    "audio": "lunar_arrival_mission.mp3"
+  }
+}
